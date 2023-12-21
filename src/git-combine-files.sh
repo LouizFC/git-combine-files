@@ -13,7 +13,6 @@ for ((i = 1; i <= $#; i++)); do
         target_file="$file"
     else
         source_files+=("$file")
-        combine_branches+=("combine-${file%.*}-to-$target_file")
     fi
 done
 
